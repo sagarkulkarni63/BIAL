@@ -5,8 +5,7 @@ import Map from "../Screens/Map"
 import Shop from "../Screens/Shop"
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import Identity from "../Screens/Identity";
-
-
+import QRcode from '../Screens/QRcode'
 const Tab= createBottomTabNavigator();
 const Tabs= () =>{
     return(
@@ -27,7 +26,7 @@ const Tabs= () =>{
                 }
             }}
             >
-            <Tab.Screen name="Welcome to Bangalore Intl. Airport" component={HomeScreen} options={{tabBarIcon: ({focused}) =>(
+            <Tab.Screen name="Welcome to Bangalore Intl. Airport" component={QRcode} options={{tabBarIcon: ({focused}) =>(
                 <View style={{alignItems: 'center', justifyContent:'center',top:10}}>
                     <Image source={require('../Icons/download.png')}
                     resizeMode='contain'
@@ -63,7 +62,7 @@ const Tabs= () =>{
                 </View>
             )
             }}/>
-            
+
         </Tab.Navigator>
     );
 }
