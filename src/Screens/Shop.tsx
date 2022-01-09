@@ -1,12 +1,11 @@
 import React from 'react'
 import { View, Text } from 'react-native'
-
-const Test = () => {
+import TopNavigation from '../Navigation/TopNavigation'
+export default function Shop() {
     return (
         <View>
-            <Text></Text>
+            <TopNavigation/>
         </View>
     )
 }
 
-export default Test

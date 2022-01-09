@@ -21,7 +21,8 @@ chgVisib=()=>{
 render() {
 return (
   <SafeAreaView>
-    <View>
+    
+    <View >
       <View style={styles.header}>
         <Image source={require('../Icons/KIAB-Logo-1200-X-628-removebg-preview.png')} style={styles.headerImage}/>
         <Text  style={styles.headerText}>Welcome To Bengaluru International Airport</Text>
@@ -30,12 +31,14 @@ return (
       <TouchableOpacity style={styles.button} onPress={this.chgVisib} title="Click to Generate" > 
         <Text>Generate Boarding Pass </Text>
       </TouchableOpacity>
-        {this.state.isVisible?
-      <QRCode value={this.state.text.length > 0 ? this.state.text : "BIAL"}
+      <View style={styles.qr}>
+      {this.state.isVisible?
+        <QRCode value={this.state.text.length > 0 ? this.state.text : "https://bialgodspeed.azurewebsites.net/"}
       size={200}
       bgColor='#000000'
       fgColor='#FFFFFF'
       />:null}
+      </View>
     </View>
   </SafeAreaView>
 );
@@ -43,6 +46,9 @@ return (
 }
  
 const styles = StyleSheet.create({
+  qr:{
+    alignItems:'center',
+  },
     container: {
         
         backgroundColor: 'white',
@@ -54,7 +60,7 @@ const styles = StyleSheet.create({
       width:'100%',
       height: '25%',
       flexDirection: 'row',
-
+      marginBottom: 10,
     },
     input: {
         height: 40,

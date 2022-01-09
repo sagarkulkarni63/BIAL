@@ -1,11 +1,12 @@
 import React from "react";
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
-import HomeScreen from "../Screens/HomeScreen";
 import Map from "../Screens/Map"
-import Shop from "../Screens/Shop"
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import Identity from "../Screens/Identity";
 import QRcode from '../Screens/QRcode'
+import Shop from '../Screens/Shop'
+import TopNavigation from "./TopNavigation";
+import Explore from "../Screens/Explore";
 const Tab= createBottomTabNavigator();
 const Tabs= () =>{
     return(
@@ -19,7 +20,7 @@ const Tabs= () =>{
                     left: 20,
                     right: 20,
                     elevation: 0,
-                    backgroundColor:'#ffffff',
+                    backgroundColor:'white',
                     borderRadius: 15,
                     height: 90,
                     ...styles.shadow
@@ -53,7 +54,7 @@ const Tabs= () =>{
                 </View>
             )
             }} />
-            <Tab.Screen name="Explore" component={Shop} options={{tabBarIcon: ({focused}) =>(
+            <Tab.Screen name="Explore" component={TopNavigation} options={{tabBarIcon: ({focused}) =>(
                 <View style={{alignItems: 'center', justifyContent:'center',top:10}}>
                     <Image source={require('../Icons/explore.png')}
                     resizeMode='contain'
