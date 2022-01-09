@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'BialGodSpeed'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D8C7B673E73C43518957B5A3D9644941 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9E1E26F0DCC94CA79AA0DE1BAA113B4D }}
           package: .
