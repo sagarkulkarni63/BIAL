@@ -24,10 +24,7 @@ in the app where it will help you guide into any shop or restaurant. This helps 
 increases business and improve airport revenue.
 
 ![Alt text](../src/HomeScreen.jpg)
-[ID](https://github.com/sagarkulkarni63/BIAL/blob/master/src/Profile.jpg)
-[Map](https://github.com/sagarkulkarni63/BIAL/blob/master/src/Map.jpg)
-[Shop](https://github.com/sagarkulkarni63/BIAL/blob/master/src/Shopping.jpg)
-[Dine/Restaurant](https://github.com/sagarkulkarni63/BIAL/blob/master/src/Profile.jpg)
+
 
 
 
