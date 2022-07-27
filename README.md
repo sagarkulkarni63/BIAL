@@ -4,7 +4,7 @@ passenger experience and give them a highly comfortable environment while flying
 This is a prototype digital concierge that enables passengers to have a simple, seamless, and engaging travel journey 
 while flying through Bengaluru Airport thus allowing them to experience the airport as a ‘destination’. 
 
-** Airport Transit **
+### Airport Transit ###
 A few hours before your Boarding, If the passenger has already booked a ticket, he can Input his
 Booking reference (or PNR) in the App. This will generate a QR code for boarding with all his/her details after secure
 verification. The BIAL Genie App sends a notification to the mobile user in which the App is
